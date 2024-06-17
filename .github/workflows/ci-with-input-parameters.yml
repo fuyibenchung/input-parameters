@@ -1,12 +1,12 @@
 name: Greeting Action
 
-on: [workflow_dispatch]
-
-inputs:
-  greeting:
-    description: 'Greeting message'
-    required: true
-    default: 'Hello'
+on: 
+  workflow_dispatch:
+    inputs:
+      greeting:
+        description: 'Greeting message'
+        required: true
+        default: 'Hello'
 
 jobs:
   greet:
